@@ -141,6 +141,8 @@ ifeq ($(strip $(AUDIO_FEATURE_ENABLED_HWDEP_CAL)),true)
     LOCAL_CFLAGS += -DHWDEP_CAL_ENABLED
 endif
 
+common_cflags += -fno-strict-aliasing
+
 include $(CLEAR_VARS)
 
 LOCAL_ARM_MODE := arm
